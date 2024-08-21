@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "http://codercba.com:1888/airbnb/api/$1"
+    }
+  ]
+}
