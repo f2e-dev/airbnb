@@ -19,6 +19,8 @@ const EntirePagination = memo(() => {
   const handleChange = (page) => {
     dispatch(setCurrentPageAction(page - 1))
     dispatch(fetchEntireDataAction())
+    // 滚动到顶部
+    window.scrollTo(0, 0)
   }
 
   return (
